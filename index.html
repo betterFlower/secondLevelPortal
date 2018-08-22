@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <title>二级开放平台</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/daterangepicker.css" rel="stylesheet"/>
+        <link href="css/city-picker.css" rel="stylesheet"/>
+        <link href="css/sprite.css" rel="stylesheet">
+        <link href="css/spriteDevDoc.css" rel="stylesheet">
+        <link href="css/spriteDome.css" rel="stylesheet">
+        <link href="css/spriteZj.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet"/>
+        <script src="lib/jquery-1.12.2.min.js"></script>
+        <script src="lib/city-picker.data.js"></script>
+        <script src="lib/city-picker.min.js"></script>
+        <!--<script src="/lib/jsencrypt.min.js"></script>-->
+        <script src="lib/Barrett.min.js"></script>
+        <script src="lib/BigInt.min.js"></script>
+        <script src="lib/RSA_Stripped.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="lib/html5shiv.min.js"></script>
+        <script src="lib/respond.min.js"></script>
+        <script src="lib/es5-shim.min.js"></script>
+        <script src="lib/es5-sham.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <textarea id="oldUrl" style="display: none">
+        {
+        "index": {
+         "text": "首页",
+         "url": "../index.action"
+        },
+        "accountManage": {
+         "text": "账号信息",
+         "url": "../goToWorkBenchAction.action",
+         "leftStatus": "2_0",
+         "frameUrl": "showUser.action"
+        },
+        "changePWD": {
+         "text": "密码更改",
+         "url": "../goToWorkBenchAction.action",
+         "leftStatus": "2_1",
+         "frameUrl": "showPassWordJsp.action"
+        },
+        "certification": {
+         "text": "认证信息",
+         "url":"../goToWorkBenchAction.action",
+         "leftStatus": "2_2",
+         "frameUrl": "account_authentication.action"
+        },
+        "message": {
+         "text": "站内消息",
+         "url": "../goToWorkBenchAction.action",
+         "leftStatus": "2_3",
+         "frameUrl": "accountEmail/accountEmail.action"
+        },
+        "login": {
+         "text": "登录",
+         "url": "loginAction.action"
+        },
+        "registration": {
+         "text": "注册",
+         "url": "goToRegisterAction.action"
+        },
+        "companion": {
+         "text": "开发者指南",
+         "url": "#"
+        },
+        "restAPI": {
+         "text": "REST API",
+         "url": "#"
+        },
+        "sdk": {
+         "text": "SDK下载",
+         "url": "#"
+        },
+        "agreement": {
+         "text": "服务协议",
+         "url": "#"
+        },
+        "FQA": {
+         "text": "常见问题",
+         "url": "#"
+        },
+        "voiceItem0": {
+         "text": "呼叫事件通知",
+         "url": "#"
+        },
+        "voiceItem1": {
+         "text": "呼叫控制",
+         "url": "#"
+        },
+        "voiceItem2": {
+         "text": "IVR",
+         "url": "#"
+        },
+        "voiceItem3": {
+         "text": "两方通话",
+         "url": "#"
+        },
+        "voiceItem4": {
+         "text": "多方通话",
+         "url": "#"
+        },
+        "smsItem0": {
+         "text": "短消息",
+         "url": "#"
+        },
+        "smsItem1": {
+         "text": "多媒体消息",
+         "url": "#"
+        },
+        "smsItem2": {
+         "text": "USSD",
+         "url": "#"
+        },
+        "passageItem0": {
+         "text": "QOS",
+         "url": "#"
+        }
+        }
+        </textarea>
+        <input type="hidden" id="ajaxPath" value=""/>
+        <div id="app"></div>
+    </body>
+    <script src="dist/vendors.js"></script>
+    <script src="dist/index.js"></script>
+</html>
